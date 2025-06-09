@@ -1,0 +1,37 @@
+name: Monitoramento de Logs
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '*/15 * * * *'  # Executa a cada 15 minutos (tempo do GitHub Actions)
+
+jobs:
+  rodar-monitoramento:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar o repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: |
+          pip install --upgrade pip
+
+      - name: Executar script de monitoramento
+        run: |
+          python monitor_log.py
+
+      - name: Fazer commit dos resultados
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add eventos_seguranca.csv
+          git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
+          git push
