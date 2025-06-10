@@ -11,28 +11,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clonar repositório
-      uses: actions/checkout@v3
+      - name: Clonar repositório
+        uses: actions/checkout@v3
 
-    - name: Instalar Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Executar script de monitoramento
-      run: python monitor_log.py
+      - name: Executar script de monitoramento
+        run: python monitor_log.py
 
-    - name: Commit se CSV for gerado
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
+      - name: Commit se CSV for gerado
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
-        if [ -f eventos_seguranca.csv ]; then
-          git add eventos_seguranca.csv
-          git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/LKLuks/prova-final
-          git push
-        else
-          echo "⚠️ Arquivo eventos_seguranca.csv não foi encontrado, nada a fazer."
+          if [ -f eventos_seguranca.csv ]; then
+            git add eventos_seguranca.csv
+            git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
+            git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/LKLuks/prova-final
+            git push
+          else
+            echo "⚠️ Arquivo eventos_seguranca.csv não foi encontrado, nada a fazer."
