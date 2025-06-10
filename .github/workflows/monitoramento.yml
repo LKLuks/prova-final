@@ -25,7 +25,7 @@ jobs:
       - name: Commit se CSV for gerado
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
+        run: 
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
