@@ -27,16 +27,16 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        git config --local user.name "github-actions"
-        git config --local user.email "github-actions@github.com"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
         if [ -f eventos_seguranca.csv ]; then
           git add eventos_seguranca.csv
           git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
 
           # Configura a URL remota com token para autenticar o push
-          # git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/LKLuks/prova-final.git
-          git push https://LKLuks:${GH_TOKEN}@github.com/LKLuks/prova-final.git main
+          git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin main
         else
           echo "⚠️ Arquivo eventos_seguranca.csv não foi encontrado, nada a fazer."
         fi
