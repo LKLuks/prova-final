@@ -33,7 +33,7 @@ jobs:
         if [ -f eventos_seguranca.csv ]; then
           git add eventos_seguranca.csv
           git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/LKLuks/prova-final
+          git remote set-url origin https://LKLuks:${GH_TOKEN}@github.com/LKLuks/prova-final
           git push
         else
           echo "⚠️ Arquivo eventos_seguranca.csv não foi encontrado, nada a fazer."
