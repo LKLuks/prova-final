@@ -9,11 +9,16 @@ on:
 
 jobs:
   monitoramento:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
+    permissions:                # Job-level permissions configuration starts here
+      contents: write           # 'write' access to repository contents
+      pull-requests: write      # 'write' access to pull requests**
 
     steps:
     - name: Checkout repositório
       uses: actions/checkout@v3
+      with:
+        persist-credentials: false
 
     - name: Setup Python 3.10
       uses: actions/setup-python@v4
