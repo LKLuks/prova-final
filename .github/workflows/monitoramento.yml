@@ -25,8 +25,6 @@ jobs:
 
     - name: Commit se CSV for gerado
       run: |
-        git config --local user.name "github-actions"
-
         if [ -f eventos_seguranca.csv ]; then
           git add eventos_seguranca.csv
           git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
