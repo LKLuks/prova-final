@@ -26,12 +26,10 @@ jobs:
     - name: Commit se CSV for gerado
       run: |
         git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
 
         if [ -f eventos_seguranca.csv ]; then
           git add eventos_seguranca.csv
           git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
-          git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/LKLuks/prova-final
           git push
         else
           echo "⚠️ Arquivo eventos_seguranca.csv não foi encontrado, nada a fazer."
