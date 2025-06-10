@@ -2,36 +2,36 @@ name: Monitoramento de Logs
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   schedule:
-    - cron: '*/15 * * * *'  # Executa a cada 15 minutos (tempo do GitHub Actions)
+    - cron: '*/10 * * * *'  # Executa a cada 10 minutos
 
 jobs:
-  rodar-monitoramento:
+  monitoramento:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clonar o repositório
-        uses: actions/checkout@v3
+    - name: Clonar repositório
+      uses: actions/checkout@v3
 
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+    - name: Instalar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-      - name: Instalar dependências
-        run: |
-          pip install --upgrade pip
+    - name: Executar script de monitoramento
+      run: |
+        python monitor_log.py
 
-      - name: Executar script de monitoramento
-        run: |
-          python monitor_log.py
-  name: Fazer commit dos resultados
-  run: |
-    git config --global user.name 'github-actions'
-    git config --global user.email 'github-actions@github.com'
-    git add eventos_seguranca.csv
-    git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
-    git push
-    AUTH_LOG = "auth_fake.log"  # Simulação local
+    - name: Commit se CSV for gerado
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+
+        if [ -f eventos_seguranca.csv ]; then
+          git add eventos_seguranca.csv
+          git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
+          git push
+        else
+          echo "⚠️ Arquivo eventos_seguranca.csv não foi encontrado, nada a fazer."
+        fi

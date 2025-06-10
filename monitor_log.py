@@ -1,52 +1,30 @@
 import re
 import csv
-import os
 from datetime import datetime
 
-# Caminho dos logs a serem monitorados
-AUTH_LOG = "/var/log/auth.log"  # Linux
-OUTPUT_CSV = "eventos_seguranca.csv"
+# Usar log simulado se o original não existir
+try:
+    with open("/var/log/auth.log", "r") as f:
+        lines = f.readlines()
+except FileNotFoundError:
+    with open("auth_fake.log", "r") as f:
+        lines = f.readlines()
 
-# Expressões regulares para eventos relevantes
-REGEX_EVENTOS = {
-    "login_invalido": r"Failed password for (invalid user )?(\w+) from ([\d\.]+)",
-    "execucao_suspeita": r"COMMAND=.*(netcat|nc|nmap|telnet|python3? .*shell).*"
-}
+eventos = []
 
-def extrair_eventos(log_path):
-    eventos = []
-    if not os.path.exists(log_path):
-        print(f"Arquivo de log não encontrado: {log_path}")
-        return eventos
+for linha in lines:
+    if "Failed password" in linha or "authentication failure" in linha:
+        eventos.append(("Tentativa de login inválida", linha.strip()))
+    elif "sudo" in linha:
+        eventos.append(("Uso de sudo", linha.strip()))
+    elif "CRON" in linha and "CMD" in linha:
+        eventos.append(("Execução agendada", linha.strip()))
 
-    with open(log_path, 'r', encoding='utf-8', errors='ignore') as log_file:
-        for linha in log_file:
-            for tipo, padrao in REGEX_EVENTOS.items():
-                match = re.search(padrao, linha)
-                if match:
-                    eventos.append({
-                        "timestamp": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                        "tipo_evento": tipo,
-                        "descricao": linha.strip()
-                    })
-    return eventos
+# Escrever CSV mesmo que esteja vazio
+with open("eventos_seguranca.csv", "w", newline="") as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(["Tipo de Evento", "Descrição"])
+    for evento in eventos:
+        writer.writerow(evento)
 
-def salvar_em_csv(eventos, caminho_csv):
-    existe = os.path.exists(caminho_csv)
-    with open(caminho_csv, 'a', newline='', encoding='utf-8') as csvfile:
-        campos = ["timestamp", "tipo_evento", "descricao"]
-        writer = csv.DictWriter(csvfile, fieldnames=campos)
-        if not existe:
-            writer.writeheader()
-        for evento in eventos:
-            writer.writerow(evento)
-
-if __name__ == "__main__":
-    print("🛡️  Monitorando logs de segurança...")
-    eventos_detectados = extrair_eventos(AUTH_LOG)
-    if eventos_detectados:
-        salvar_em_csv(eventos_detectados, OUTPUT_CSV)
-        print(f"✅ {len(eventos_detectados)} evento(s) salvo(s) em {OUTPUT_CSV}")
-    else:
-        print("ℹ️  Nenhum evento de segurança encontrado.")
-
+print(f"[{datetime.now()}] Análise concluída: {len(eventos)} evento(s) detectado(s).")
