@@ -1,8 +1,114 @@
 Tipo de Evento,Descrição
-Execução agendada,Jun  9 10:15:01 ubuntu CRON[1234]: (root) CMD (run-parts /etc/cron.hourly)
-Uso de sudo,Jun  9 10:16:45 ubuntu sudo:    user1 : TTY=pts/0 ; PWD=/home/user1 ; USER=root ; COMMAND=/bin/ls
-Tentativa de login inválida,Jun  9 10:17:02 ubuntu sshd[5678]: Failed password for invalid user admin from 192.168.1.10 port 22 ssh2
-Tentativa de login inválida,Jun  9 10:17:08 ubuntu sshd[5679]: Failed password for root from 192.168.1.11 port 22 ssh2
-Execução agendada,Jun  9 10:18:00 ubuntu CRON[1240]: (root) CMD (/usr/bin/python3 /scripts/backup.py)
-Uso de sudo,Jun  9 10:18:22 ubuntu sudo:    user2 : TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/apt update
-Tentativa de login inválida,Jun  9 10:19:35 ubuntu sshd[5682]: Failed password for user2 from 192.168.1.13 port 22 ssh2
+Uso de sudo,2025-05-11T21:59:25.699553+00:00 pkrvmh0s9k35se2 sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/rm -f /usr/local/bin/apt
+Uso de sudo,2025-05-11T21:59:25.760003+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+Uso de sudo,2025-05-11T21:59:25.760076+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T21:59:25.760152+00:00 pkrvmh0s9k35se2 sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/rm -f /usr/local/bin/apt-get
+Uso de sudo,2025-05-11T21:59:25.760178+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+Uso de sudo,2025-05-11T21:59:25.760210+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T21:59:25.760262+00:00 pkrvmh0s9k35se2 sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/rm -f /usr/local/bin/apt-key
+Uso de sudo,2025-05-11T21:59:25.760285+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+Uso de sudo,2025-05-11T21:59:25.760314+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T21:59:25.760342+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T21:59:27.442423+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/chown -R packer: /home/packer
+Uso de sudo,2025-05-11T21:59:27.443002+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T21:59:27.465313+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:00.998107+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/docker version --format {{.Client.Version}}
+Uso de sudo,2025-05-11T22:00:00.998525+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:01.021412+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:01.049450+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/docker version --format {{.Server.Version}}
+Uso de sudo,2025-05-11T22:00:01.049899+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:01.068968+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:32.293556+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl start postgresql
+Uso de sudo,2025-05-11T22:00:32.293951+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:34.638433+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:34.705329+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl stop postgresql
+Uso de sudo,2025-05-11T22:00:34.705901+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:34.717295+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:34.825455+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl start mysql
+Uso de sudo,2025-05-11T22:00:34.825898+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:36.302263+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:36.345309+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/mysql -vvv -e 'CREATE DATABASE smoke_test' -uroot -proot
+Uso de sudo,2025-05-11T22:00:36.345829+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:36.386579+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:36.406328+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/mysql -vvv -e 'DROP DATABASE smoke_test' -uroot -proot
+Uso de sudo,2025-05-11T22:00:36.406832+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:36.455563+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:36.473490+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl stop mysql
+Uso de sudo,2025-05-11T22:00:36.474056+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:38.099490+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:45.807186+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/docker version --format {{.Client.Version}}
+Uso de sudo,2025-05-11T22:00:45.807804+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:45.828467+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:45.848005+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/docker version --format {{.Server.Version}}
+Uso de sudo,2025-05-11T22:00:45.848463+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:45.868707+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:45.888228+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/docker version --format {{.Client.Version}}
+Uso de sudo,2025-05-11T22:00:45.888658+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:45.908126+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:45.922582+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/docker version --format {{.Server.Version}}
+Uso de sudo,2025-05-11T22:00:45.923043+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:45.945361+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:58.634169+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl start apache2
+Uso de sudo,2025-05-11T22:00:58.634673+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:58.695710+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:58.745144+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl stop apache2
+Uso de sudo,2025-05-11T22:00:58.745643+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:58.802027+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:58.841177+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl start nginx
+Uso de sudo,2025-05-11T22:00:58.841855+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:58.876562+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:58.895012+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/sbin/nginx -t
+Uso de sudo,2025-05-11T22:00:58.895596+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:58.899326+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:00:58.916217+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/tmp/ninjaproject ; USER=root ; COMMAND=/usr/bin/systemctl stop nginx
+Uso de sudo,2025-05-11T22:00:58.916619+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:00:58.962868+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:01:00.104177+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'HELPER_SCRIPT_FOLDER=/imagegeneration/helpers IMAGE_FOLDER=/imagegeneration INSTALLER_SCRIPT_FOLDER=/imagegeneration/installers PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=build_image  /tmp/script_7760.sh'
+Uso de sudo,2025-05-11T22:01:00.104595+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:01:18.644558+00:00 pkrvmh0s9k35se2 sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sed -i -e s%^PATH=.*$%PATH=/snap/bin:$HOME/.local/bin:/opt/pipx_bin:$HOME/.cargo/bin:$HOME/.config/composer/vendor/bin:/usr/local/.ghcup/bin:$HOME/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin% /etc/environment
+Uso de sudo,2025-05-11T22:01:18.644898+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+Uso de sudo,2025-05-11T22:01:18.646951+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:01:20.132659+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T22:01:20.646322+00:00 pkrvmh0s9k35se2 sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=build_image  /tmp/script_2413.sh'
+Uso de sudo,2025-05-11T22:01:20.646935+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T22:01:50.976894+00:00 pkrvmh0s9k35se2 userdel[5295]: delete 'packer' from group 'sudo'
+Uso de sudo,2025-05-11T22:01:50.977280+00:00 pkrvmh0s9k35se2 userdel[5295]: delete 'packer' from shadow group 'sudo'
+Uso de sudo,2025-05-11T22:01:52.226861+00:00 pkrvmh0s9k35se2 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:43:29.334556+00:00 pkrvmf6wy0o8zjz useradd[786]: add 'packer' to group 'sudo'
+Uso de sudo,2025-05-11T23:43:29.334577+00:00 pkrvmf6wy0o8zjz useradd[786]: add 'packer' to shadow group 'sudo'
+Uso de sudo,2025-05-11T23:44:00.571427+00:00 pkrvmf6wy0o8zjz sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'ABUSE_TOOLS_BASE_URL=https://provjobdprod.z13.web.core.windows.net/binaries DOCKER_BASE64_AUTH=Z2l0aHViYWN0aW9uczozZDY0NzJiOS0zZDQ5LTRkMTctOWZjOS05MGQyNDI1ODA0M2I= HCA_BASE_URL=https://hostedcomputeagentprod.z13.web.core.windows.net HCA_INSTALL_PATH=/opt/hca PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image RUNNER_USER=runner  /tmp/script_4943.sh'
+Uso de sudo,2025-05-11T23:44:00.572173+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T23:44:09.935338+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:44:10.299595+00:00 pkrvmf6wy0o8zjz sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'ABUSE_TOOLS_BASE_URL=https://provjobdprod.z13.web.core.windows.net/binaries DOCKER_BASE64_AUTH=Z2l0aHViYWN0aW9uczozZDY0NzJiOS0zZDQ5LTRkMTctOWZjOS05MGQyNDI1ODA0M2I= HCA_BASE_URL=https://hostedcomputeagentprod.z13.web.core.windows.net HCA_INSTALL_PATH=/opt/hca PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image RUNNER_USER=runner  /tmp/script_4943.sh'
+Uso de sudo,2025-05-11T23:44:10.300188+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T23:45:19.182477+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:45:19.548478+00:00 pkrvmf6wy0o8zjz sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'ABUSE_TOOLS_BASE_URL=https://provjobdprod.z13.web.core.windows.net/binaries DOCKER_BASE64_AUTH=Z2l0aHViYWN0aW9uczozZDY0NzJiOS0zZDQ5LTRkMTctOWZjOS05MGQyNDI1ODA0M2I= HCA_BASE_URL=https://hostedcomputeagentprod.z13.web.core.windows.net HCA_INSTALL_PATH=/opt/hca PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image RUNNER_USER=runner  /tmp/script_4943.sh'
+Uso de sudo,2025-05-11T23:45:19.548903+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T23:45:19.583059+00:00 pkrvmf6wy0o8zjz sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/tee -a /etc/environment
+Uso de sudo,2025-05-11T23:45:19.583643+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+Uso de sudo,2025-05-11T23:45:19.586265+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:45:19.592848+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:45:20.111467+00:00 pkrvmf6wy0o8zjz sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'ABUSE_TOOLS_BASE_URL=https://provjobdprod.z13.web.core.windows.net/binaries DOCKER_BASE64_AUTH=Z2l0aHViYWN0aW9uczozZDY0NzJiOS0zZDQ5LTRkMTctOWZjOS05MGQyNDI1ODA0M2I= HCA_BASE_URL=https://hostedcomputeagentprod.z13.web.core.windows.net HCA_INSTALL_PATH=/opt/hca PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image RUNNER_USER=runner  /tmp/script_4943.sh'
+Uso de sudo,2025-05-11T23:45:20.112044+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T23:45:20.118684+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:45:20.487290+00:00 pkrvmf6wy0o8zjz sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'ABUSE_TOOLS_BASE_URL=https://provjobdprod.z13.web.core.windows.net/binaries DOCKER_BASE64_AUTH=Z2l0aHViYWN0aW9uczozZDY0NzJiOS0zZDQ5LTRkMTctOWZjOS05MGQyNDI1ODA0M2I= HCA_BASE_URL=https://hostedcomputeagentprod.z13.web.core.windows.net HCA_INSTALL_PATH=/opt/hca PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image RUNNER_USER=runner  /tmp/script_4943.sh'
+Uso de sudo,2025-05-11T23:45:20.487901+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T23:45:21.385279+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:45:21.754335+00:00 pkrvmf6wy0o8zjz sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'ABUSE_TOOLS_BASE_URL=https://provjobdprod.z13.web.core.windows.net/binaries DOCKER_BASE64_AUTH=Z2l0aHViYWN0aW9uczozZDY0NzJiOS0zZDQ5LTRkMTctOWZjOS05MGQyNDI1ODA0M2I= HCA_BASE_URL=https://hostedcomputeagentprod.z13.web.core.windows.net HCA_INSTALL_PATH=/opt/hca PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image RUNNER_USER=runner  /tmp/script_4943.sh'
+Uso de sudo,2025-05-11T23:45:21.754807+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T23:45:22.633400+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-05-11T23:45:23.083559+00:00 pkrvmf6wy0o8zjz sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'IS_SPECIALIZED=True PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image  /tmp/script_2509.sh'
+Uso de sudo,2025-05-11T23:45:23.084123+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-05-11T23:45:53.090376+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-06-10T03:57:06.459816+00:00 pkrvmf6wy0o8zjz sudo:     root : PWD=/var/lib/waagent/run-command/download/22 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached
+Uso de sudo,2025-06-10T03:57:06.461030+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-06-10T03:57:06.463073+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-06-10T03:57:06.470527+00:00 pkrvmf6wy0o8zjz sudo:     root : PWD=/var/lib/waagent/run-command/download/22 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.323.0.tar.gz -C /home/runner/actions-runner/cached
+Uso de sudo,2025-06-10T03:57:06.471393+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-06-10T03:57:08.733547+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-06-10T03:57:08.745412+00:00 pkrvmf6wy0o8zjz sudo:     root : PWD=/var/lib/waagent/run-command/download/22 ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
+Uso de sudo,2025-06-10T03:57:08.745718+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2025-06-10T03:57:08.747316+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-06-10T03:57:09.396262+00:00 pkrvmf6wy0o8zjz sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
+Uso de sudo,2025-06-10T03:57:09.396852+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2025-06-10T03:57:09.400196+00:00 pkrvmf6wy0o8zjz sudo: pam_unix(sudo:session): session closed for user root
