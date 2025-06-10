@@ -27,11 +27,11 @@ jobs:
       - name: Executar script de monitoramento
         run: |
           python monitor_log.py
-
-      - name: Fazer commit dos resultados
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add eventos_seguranca.csv
-          git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
-          git push
+  name: Fazer commit dos resultados
+  run: |
+    git config --global user.name 'github-actions'
+    git config --global user.email 'github-actions@github.com'
+    git add eventos_seguranca.csv
+    git commit -m "Atualizando eventos detectados [bot]" || echo "Nada para commitar"
+    git push
+    AUTH_LOG = "auth_fake.log"  # Simulação local
