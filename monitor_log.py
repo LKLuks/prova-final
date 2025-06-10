@@ -2,7 +2,7 @@ import re
 import csv
 from datetime import datetime
 
-# Usar log simulado se o original não existir
+# Tenta abrir o log real; se falhar, usa o simulado
 try:
     with open("/var/log/auth.log", "r") as f:
         lines = f.readlines()
@@ -20,7 +20,7 @@ for linha in lines:
     elif "CRON" in linha and "CMD" in linha:
         eventos.append(("Execução agendada", linha.strip()))
 
-# Escrever CSV mesmo que esteja vazio
+# Escreve o CSV mesmo que esteja vazio
 with open("eventos_seguranca.csv", "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["Tipo de Evento", "Descrição"])
