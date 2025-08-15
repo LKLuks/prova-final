@@ -1,11 +1,17 @@
 Tipo de Evento,Descrição
-Uso de sudo,2025-08-13T09:37:07.671981+00:00 fv-az1695-477 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2025-08-15T11:39:22.243852+00:00 fv-az1695-477 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/systemd-tmpfiles --create /tmp/1001-users.conf
-Uso de sudo,2025-08-15T11:39:22.244295+00:00 fv-az1695-477 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2025-08-15T11:39:22.247872+00:00 fv-az1695-477 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2025-08-15T11:39:22.256010+00:00 fv-az1695-477 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/tee -a /etc/environment
-Uso de sudo,2025-08-15T11:39:22.256533+00:00 fv-az1695-477 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2025-08-15T11:39:22.257962+00:00 fv-az1695-477 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2025-08-15T11:39:22.288233+00:00 fv-az1695-477 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /proc/836/oom_score_adj
-Uso de sudo,2025-08-15T11:39:22.288699+00:00 fv-az1695-477 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2025-08-15T11:39:22.290023+00:00 fv-az1695-477 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-08-10T22:53:05.332959+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-08-10T22:53:05.754004+00:00 pkrvmubgrv54qmi sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'IS_SPECIALIZED=True PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=image  /tmp/script_2650.sh'
+Uso de sudo,2025-08-10T22:53:05.754350+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+Uso de sudo,2025-08-10T22:53:35.760038+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-08-15T11:51:28.870355+00:00 pkrvmubgrv54qmi sudo:     root : PWD=/var/lib/waagent/run-command/download/43 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached
+Uso de sudo,2025-08-15T11:51:28.871174+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-08-15T11:51:28.872786+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-08-15T11:51:28.879513+00:00 pkrvmubgrv54qmi sudo:     root : PWD=/var/lib/waagent/run-command/download/43 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.327.1.tar.gz -C /home/runner/actions-runner/cached
+Uso de sudo,2025-08-15T11:51:28.880409+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-08-15T11:51:33.193572+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-08-15T11:51:33.400296+00:00 pkrvmubgrv54qmi sudo:     root : PWD=/var/lib/waagent/run-command/download/43 ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
+Uso de sudo,2025-08-15T11:51:33.400562+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2025-08-15T11:51:33.402124+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-08-15T11:51:34.001197+00:00 pkrvmubgrv54qmi sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
+Uso de sudo,2025-08-15T11:51:34.001812+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2025-08-15T11:51:34.005891+00:00 pkrvmubgrv54qmi sudo: pam_unix(sudo:session): session closed for user root
