@@ -3,17 +3,29 @@ Uso de sudo,2025-11-12T12:07:12.461230+00:00 runnervmg1sw1 sudo: pam_unix(sudo:s
 Uso de sudo,2025-11-12T12:07:12.984922+00:00 runnervmg1sw1 sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'OS_STATE=Specialized PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=partner-image  /tmp/script_7482.sh'
 Uso de sudo,2025-11-12T12:07:12.985411+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
 Uso de sudo,2025-11-12T12:07:42.990203+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2025-12-02T23:09:53.032081+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/23 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached
-Uso de sudo,2025-12-02T23:09:53.033280+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2025-12-02T23:09:53.034914+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2025-12-02T23:09:53.042111+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/23 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.329.0.tar.gz -C /home/runner/actions-runner/cached
-Uso de sudo,2025-12-02T23:09:53.042965+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2025-12-02T23:09:57.410523+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2025-12-02T23:09:57.424639+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/23 ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
-Uso de sudo,2025-12-02T23:09:57.424992+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2025-12-02T23:09:57.426785+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2025-12-02T23:09:58.099456+00:00 runnervmg1sw1 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
-Uso de sudo,2025-12-02T23:09:58.099756+00:00 runnervmg1sw1 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/tmp/provjobd3013961479
-Uso de sudo,2025-12-02T23:09:58.100069+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2025-12-02T23:09:58.100265+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2025-12-02T23:09:58.104719+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-12-02T23:26:48.101038+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/60 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached
+Uso de sudo,2025-12-02T23:26:48.102140+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-12-02T23:26:48.103738+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-12-02T23:26:48.110902+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/60 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.329.0.tar.gz -C /home/runner/actions-runner/cached
+Uso de sudo,2025-12-02T23:26:48.111714+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-12-02T23:26:52.450951+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-12-02T23:26:52.459724+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/60 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /opt/runner-cache
+Uso de sudo,2025-12-02T23:26:52.460557+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-12-02T23:26:52.462132+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-12-02T23:26:52.478991+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/60 ; USER=runner ; COMMAND=/usr/bin/curl --silent --show-error --output /opt/runner-cache/actions-runner-linux-x64-2.330.0.tar.gz https://hcrpprodiad01rceus.blob.core.windows.net/github/actions-runner-linux-x64-2.330.0.tar.gz?se=2025-12-03T00%3A25%3A10Z&sig=%2BIo9OQF7vJb3TSq2HTzklh0oUKM6mmPuQ9sUXzqLu%2BQ%3D&ske=2025-12-03T01%3A25%3A10Z&skoid=222aaccb-adff-44a4-a6fe-7380aa144afb&sks=b&skt=2025-12-02T23%3A20%3A10Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=r&spr=https&sr=b&st=2025-12-02T23%3A20%3A10Z&sv=2025-11-05
+Uso de sudo,2025-12-02T23:26:52.479836+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-12-02T23:26:53.780227+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-12-02T23:26:53.786072+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/60 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.330.0
+Uso de sudo,2025-12-02T23:26:53.786842+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-12-02T23:26:53.788538+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-12-02T23:26:53.793854+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/60 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.330.0.tar.gz -C /home/runner/actions-runner/cached/2.330.0
+Uso de sudo,2025-12-02T23:26:53.794639+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2025-12-02T23:26:57.963693+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2025-12-02T23:26:57.977436+00:00 runnervmg1sw1 sudo:     root : PWD=/var/lib/waagent/run-command/download/60 ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
+Uso de sudo,2025-12-02T23:26:57.977749+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2025-12-02T23:26:57.979531+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2025-12-02T23:26:58.642486+00:00 runnervmg1sw1 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/tmp/provjobd1593160641
+Uso de sudo,2025-12-02T23:26:58.642758+00:00 runnervmg1sw1 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
+Uso de sudo,2025-12-02T23:26:58.643073+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2025-12-02T23:26:58.643265+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2025-12-02T23:26:58.647487+00:00 runnervmg1sw1 sudo: pam_unix(sudo:session): session closed for user root
