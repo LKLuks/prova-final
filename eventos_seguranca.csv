@@ -3,41 +3,41 @@ Uso de sudo,2026-04-06T22:10:28.542173+00:00 runnervm35a4x sudo: pam_unix(sudo:s
 Uso de sudo,2026-04-06T22:10:29.071935+00:00 runnervm35a4x sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'OS_STATE=Specialized PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=partner-image  /tmp/script_439.sh'
 Uso de sudo,2026-04-06T22:10:29.072359+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
 Uso de sudo,2026-04-06T22:10:59.077143+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-04-11T02:28:29.402199+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=root ; COMMAND=/usr/bin/fallocate -l 3G /swapfile
-Uso de sudo,2026-04-11T02:28:29.402702+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-04-11T02:28:29.406313+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-04-11T02:28:29.410107+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=root ; COMMAND=/usr/bin/chmod 600 /swapfile
-Uso de sudo,2026-04-11T02:28:29.410341+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-04-11T02:28:29.411401+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-04-11T02:28:29.415111+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=root ; COMMAND=/usr/sbin/mkswap /swapfile
-Uso de sudo,2026-04-11T02:28:29.415364+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-04-11T02:28:29.418467+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-04-11T02:28:29.422057+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=root ; COMMAND=/usr/sbin/swapon /swapfile
-Uso de sudo,2026-04-11T02:28:29.422316+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-04-11T02:28:29.424654+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-04-11T02:28:29.430598+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached
-Uso de sudo,2026-04-11T02:28:29.431145+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-04-11T02:28:29.432293+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-04-11T02:28:29.437405+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.333.1.tar.gz -C /home/runner/actions-runner/cached
-Uso de sudo,2026-04-11T02:28:29.437936+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-04-11T02:28:33.656847+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-04-11T02:28:33.663456+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /opt/runner-cache
-Uso de sudo,2026-04-11T02:28:33.663995+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-04-11T02:28:33.665152+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-04-11T02:28:33.675368+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=runner ; COMMAND=/usr/bin/curl --silent --show-error --output /opt/runner-cache/actions-runner-linux-x64-2.333.0.tar.gz https://hcrpprodiad01rcncus.blob.core.windows.net/github/actions-runner-linux-x64-2.333.0.tar.gz?se=2026-04-11T02%3A53%3A15Z&sig=Uk2jMEscM3RHXaQ0d8WWO10%2BbAhcSvl%2FnasYBItW%2FR4%3D&ske=2026-04-11T03%3A53%3A15Z&skoid=222aaccb-adff-44a4-a6fe-7380aa144afb&sks=b&skt=2026-04-11T01%3A48%3A15Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2026-02-06&sp=r&spr=https&sr=b&st=2026-04-11T01%3A48%3A15Z&sv=2026-02-06
-Uso de sudo,2026-04-11T02:28:33.675940+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-04-11T02:28:34.425226+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-04-11T02:28:34.429837+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.333.0
-Uso de sudo,2026-04-11T02:28:34.430424+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-04-11T02:28:34.431697+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-04-11T02:28:34.435887+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.333.0.tar.gz -C /home/runner/actions-runner/cached/2.333.0
-Uso de sudo,2026-04-11T02:28:34.436473+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-04-11T02:28:38.594142+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-04-11T02:28:38.734518+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/35 ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
-Uso de sudo,2026-04-11T02:28:38.734696+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-04-11T02:28:38.736048+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-04-11T02:28:39.171634+00:00 runnervm35a4x sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
-Uso de sudo,2026-04-11T02:28:39.171874+00:00 runnervm35a4x sudo:   runner : PWD=/opt/hca ; USER=root ; COMMAND=/tmp/provjobd2089003410
-Uso de sudo,2026-04-11T02:28:39.172003+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2026-04-11T02:28:39.172117+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2026-04-11T02:28:39.173572+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-04-11T04:33:58.706245+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=root ; COMMAND=/usr/bin/fallocate -l 3G /swapfile
+Uso de sudo,2026-04-11T04:33:58.706780+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-04-11T04:33:58.712594+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-04-11T04:33:58.717741+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=root ; COMMAND=/usr/bin/chmod 600 /swapfile
+Uso de sudo,2026-04-11T04:33:58.718132+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-04-11T04:33:58.719629+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-04-11T04:33:58.724644+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=root ; COMMAND=/usr/sbin/mkswap /swapfile
+Uso de sudo,2026-04-11T04:33:58.725007+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-04-11T04:33:58.740091+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-04-11T04:33:58.745303+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=root ; COMMAND=/usr/sbin/swapon /swapfile
+Uso de sudo,2026-04-11T04:33:58.745667+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-04-11T04:33:58.748276+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-04-11T04:33:58.757080+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached
+Uso de sudo,2026-04-11T04:33:58.757930+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-04-11T04:33:58.759522+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-04-11T04:33:58.766594+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.333.1.tar.gz -C /home/runner/actions-runner/cached
+Uso de sudo,2026-04-11T04:33:58.767392+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-04-11T04:34:03.425963+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-04-11T04:34:03.434976+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /opt/runner-cache
+Uso de sudo,2026-04-11T04:34:03.435943+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-04-11T04:34:03.437479+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-04-11T04:34:03.450191+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=runner ; COMMAND=/usr/bin/curl --silent --show-error --output /opt/runner-cache/actions-runner-linux-x64-2.333.0.tar.gz https://hcrpprodiad02rceus-d7hed8hyhvdffmbt.b02.azurefd.net/github/actions-runner-linux-x64-2.333.0.tar.gz?se=2026-04-11T04%3A53%3A26Z&sig=4IoGcQeWRG7wkHsnhjslub5fisxGNsCNqohUa1AINqA%3D&ske=2026-04-11T05%3A53%3A26Z&skoid=6af0db8e-c864-4b6a-a9fe-e44dd0941d9e&sks=b&skt=2026-04-11T03%3A48%3A26Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2026-02-06&sp=r&spr=https&sr=b&st=2026-04-11T03%3A48%3A26Z&sv=2026-02-06
+Uso de sudo,2026-04-11T04:34:03.451066+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-04-11T04:34:04.613748+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-04-11T04:34:04.619894+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.333.0
+Uso de sudo,2026-04-11T04:34:04.620727+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-04-11T04:34:04.622342+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-04-11T04:34:04.628040+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.333.0.tar.gz -C /home/runner/actions-runner/cached/2.333.0
+Uso de sudo,2026-04-11T04:34:04.628908+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-04-11T04:34:09.250900+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-04-11T04:34:09.403184+00:00 runnervm35a4x sudo:     root : PWD=/var/lib/waagent/run-command/download/109 ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
+Uso de sudo,2026-04-11T04:34:09.403579+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-04-11T04:34:09.405239+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-04-11T04:34:09.999472+00:00 runnervm35a4x sudo:   runner : PWD=/opt/hca ; USER=root ; COMMAND=/tmp/provjobd3605343265
+Uso de sudo,2026-04-11T04:34:09.999781+00:00 runnervm35a4x sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
+Uso de sudo,2026-04-11T04:34:09.999996+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2026-04-11T04:34:10.000181+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2026-04-11T04:34:10.001694+00:00 runnervm35a4x sudo: pam_unix(sudo:session): session closed for user root
