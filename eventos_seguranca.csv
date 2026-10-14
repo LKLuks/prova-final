@@ -1,40 +1,46 @@
 Tipo de Evento,Descrição
 Uso de sudo,2026-10-04T22:31:33.545624+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-10-14T19:27:40.252648+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/fallocate -l 3G /swapfile
-Uso de sudo,2026-10-14T19:27:40.254125+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-10-14T19:27:40.269491+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-10-14T19:27:40.295842+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/chmod 600 /swapfile
-Uso de sudo,2026-10-14T19:27:40.297361+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-10-14T19:27:40.302479+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-10-14T19:27:40.316901+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/sbin/mkswap /swapfile
-Uso de sudo,2026-10-14T19:27:40.318035+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-10-14T19:27:40.328845+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-10-14T19:27:40.346300+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/sbin/swapon /swapfile
-Uso de sudo,2026-10-14T19:27:40.348249+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-10-14T19:27:40.357748+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-10-14T19:27:41.251440+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.336.0
-Uso de sudo,2026-10-14T19:27:41.252628+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-10-14T19:27:41.254571+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-10-14T19:27:41.260432+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/tar -xf /opt/runner-cache/actions-runner-linux-x64-2.336.0.tar.gz -C /home/runner/actions-runner/cached/2.336.0
-Uso de sudo,2026-10-14T19:27:41.261307+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-10-14T19:27:46.054468+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-10-14T19:27:46.063988+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.337.0
-Uso de sudo,2026-10-14T19:27:46.064786+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-10-14T19:27:46.066399+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-10-14T19:27:46.071890+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/tar -xf /opt/runner-cache/actions-runner-linux-x64-2.337.0.tar.gz -C /home/runner/actions-runner/cached/2.337.0
-Uso de sudo,2026-10-14T19:27:46.072764+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-10-14T19:27:50.937055+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-10-14T19:27:50.945934+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/mkdir -p /opt/runner-cache
-Uso de sudo,2026-10-14T19:27:50.946838+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-10-14T19:27:50.948353+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-10-14T19:27:50.964927+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/curl --fail --silent --show-error -w 'DOWNLOAD_TIMING version=%{url.host} dns=%{time_namelookup}s tcp=%{time_connect}s tls=%{time_appconnect}s ttfb=%{time_starttransfer}s total=%{time_total}s speed=%{speed_download} size=%{size_download}\\n' --output /opt/runner-cache/actions-runner-linux-x64-2.338.0.tar.gz https://hcrpprodiad01rccus.blob.core.windows.net/github/actions-runner-linux-x64-2.338.0.tar.gz?se=2026-10-14T19%3A36%3A50Z&sig=rQsJRsRH5loiFZ%2B6SntQvdaPiap0k0YZfMpWHfYmcA8%3D&ske=2026-10-14T20%3A36%3A50Z&skoid=222aaccb-adff-44a4-a6fe-7380aa144afb&sks=b&skt=2026-10-14T18%3A31%3A50Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2026-04-06&sp=r&spr=https&sr=b&st=2026-10-14T18%3A31%3A50Z&sv=2026-04-06
-Uso de sudo,2026-10-14T19:27:50.965781+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
-Uso de sudo,2026-10-14T19:27:51.007482+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
-Uso de sudo,2026-10-14T19:27:51.170996+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
-Uso de sudo,2026-10-14T19:27:51.171338+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
-Uso de sudo,2026-10-14T19:27:51.173183+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
-Uso de sudo,2026-10-14T19:27:51.755814+00:00 runnervmmprz5 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
-Uso de sudo,2026-10-14T19:27:51.756154+00:00 runnervmmprz5 sudo:   runner : PWD=/opt/hca ; USER=root ; ENV=PROVJOBD_E2E=1 ; COMMAND=/tmp/provjobd1144961144
-Uso de sudo,2026-10-14T19:27:51.756407+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2026-10-14T19:27:51.756946+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
-Uso de sudo,2026-10-14T19:27:51.758912+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-10-14T22:31:51.545075+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/fallocate -l 3G /swapfile
+Uso de sudo,2026-10-14T22:31:51.552179+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-10-14T22:31:51.603453+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-10-14T22:31:51.618485+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/chmod 600 /swapfile
+Uso de sudo,2026-10-14T22:31:51.618577+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-10-14T22:31:51.620792+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-10-14T22:31:51.627973+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/sbin/mkswap /swapfile
+Uso de sudo,2026-10-14T22:31:51.629072+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-10-14T22:31:51.654150+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-10-14T22:31:51.661876+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/sbin/swapon /swapfile
+Uso de sudo,2026-10-14T22:31:51.662799+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-10-14T22:31:51.669919+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-10-14T22:31:53.113899+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.336.0
+Uso de sudo,2026-10-14T22:31:53.114798+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:31:53.116703+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:31:53.123014+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/tar -xf /opt/runner-cache/actions-runner-linux-x64-2.336.0.tar.gz -C /home/runner/actions-runner/cached/2.336.0
+Uso de sudo,2026-10-14T22:31:53.124209+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:32:00.067606+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:32:00.077330+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.337.0
+Uso de sudo,2026-10-14T22:32:00.078238+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:32:00.079859+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:32:00.085494+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/tar -xf /opt/runner-cache/actions-runner-linux-x64-2.337.0.tar.gz -C /home/runner/actions-runner/cached/2.337.0
+Uso de sudo,2026-10-14T22:32:00.086392+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:32:05.037013+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:32:05.046421+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/mkdir -p /opt/runner-cache
+Uso de sudo,2026-10-14T22:32:05.047327+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:32:05.048937+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:32:05.065822+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/curl --fail --silent --show-error -w 'DOWNLOAD_TIMING version=%{url.host} dns=%{time_namelookup}s tcp=%{time_connect}s tls=%{time_appconnect}s ttfb=%{time_starttransfer}s total=%{time_total}s speed=%{speed_download} size=%{size_download}\\n' --output /opt/runner-cache/actions-runner-linux-x64-2.338.0.tar.gz https://hcrpprodiad02rcncus.blob.core.windows.net/github/actions-runner-linux-x64-2.338.0.tar.gz?se=2026-10-14T23%3A36%3A45Z&sig=9mSZ3%2FpezfM%2Bb59znOGQtTwpSxyB%2BQT5gOQtJJiDwrc%3D&ske=2026-10-15T00%3A36%3A45Z&skoid=6af0db8e-c864-4b6a-a9fe-e44dd0941d9e&sks=b&skt=2026-10-14T22%3A31%3A45Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2026-04-06&sp=r&spr=https&sr=b&st=2026-10-14T22%3A31%3A45Z&sv=2026-04-06
+Uso de sudo,2026-10-14T22:32:05.066689+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:32:06.257617+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:32:06.263851+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/mkdir -p /home/runner/actions-runner/cached/2.338.0
+Uso de sudo,2026-10-14T22:32:06.264672+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:32:06.266323+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:32:06.271749+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/tar -xzf /opt/runner-cache/actions-runner-linux-x64-2.338.0.tar.gz -C /home/runner/actions-runner/cached/2.338.0
+Uso de sudo,2026-10-14T22:32:06.272581+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+Uso de sudo,2026-10-14T22:32:11.073720+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user runner
+Uso de sudo,2026-10-14T22:32:11.226030+00:00 runnervmmprz5 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /etc/needrestart/conf.d/hosted-compute-agent.conf
+Uso de sudo,2026-10-14T22:32:11.226439+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Uso de sudo,2026-10-14T22:32:11.228104+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
+Uso de sudo,2026-10-14T22:32:11.855607+00:00 runnervmmprz5 sudo:   runner : PWD=/opt/hca ; USER=root ; ENV=PROVJOBD_E2E=1 ; COMMAND=/tmp/provjobd3764740380
+Uso de sudo,2026-10-14T22:32:11.856266+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2026-10-14T22:32:11.865436+00:00 runnervmmprz5 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/rm /opt/hca/provjobd
+Uso de sudo,2026-10-14T22:32:11.868785+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Uso de sudo,2026-10-14T22:32:11.874927+00:00 runnervmmprz5 sudo: pam_unix(sudo:session): session closed for user root
